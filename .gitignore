@@ -161,3 +161,4 @@ cython_debug/
 *.iml
 
 junit_report.xml
+.python-version
