@@ -25,13 +25,13 @@ setup: install init-saxon init-rml-mapper init-limes
 
 install:
 	@ echo -e "$(BUILD_PRINT)Installing the requirements$(END_BUILD_PRINT)"
-	@ pip install --upgrade pip
-	@ pip install --no-cache-dir -r requirements.txt --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.7.1/constraints-no-providers-3.8.txt"
+	@ python -m pip install --upgrade pip
+	@ python -m pip install --no-cache-dir -r requirements.txt
 
 install-dev:
 	@ echo -e "$(BUILD_PRINT)Installing the dev requirements$(END_BUILD_PRINT)"
-	@ pip install --upgrade pip
-	@ pip install --no-cache-dir -r requirements.dev.txt --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.7.1/constraints-no-providers-3.8.txt"
+	@ python -m pip install --upgrade pip
+	@ python -m pip install --no-cache-dir -r requirements.dev.txt
 
 test: test-unit
 
@@ -151,7 +151,7 @@ refresh-mapping-files:
 
 install-local:
 	@ echo -e "$(BUILD_PRINT)Installing the local requirements$(END_BUILD_PRINT)"
-	@ pip install --upgrade --force-reinstall --no-deps ../ted-rdf-conversion-pipeline
+	@ python -m pip install --upgrade --force-reinstall --no-deps ../ted-rdf-conversion-pipeline
 
 
 init-rml-mapper:

@@ -162,3 +162,7 @@ cython_debug/
 
 junit_report.xml
 .python-version
+
+.limes
+.rmlmapper
+.saxon
