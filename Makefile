@@ -143,6 +143,7 @@ local-dotenv-file: rml-mapper-path-add-dotenv-file
 
 rml-mapper-path-add-dotenv-file:
 	@ echo -e "$(BUILD_PRINT)Add rml-mapper path to local .env file $(END_BUILD_PRINT)"
+	@ test -e .env || touch .env
 	@ sed -i '/^RML_MAPPER_PATH/d' .env
 	@ echo RML_MAPPER_PATH=${RML_MAPPER_PATH} >> .env
 
@@ -166,5 +167,8 @@ init-limes:
 
 init-saxon:
 	@ echo -e "$(BUILD_PRINT)Saxon folder initialization $(END_BUILD_PRINT)"
-	@ wget -c https://kumisystems.dl.sourceforge.net/project/saxon/Saxon-HE/10/Java/SaxonHE10-6J.zip -P .saxon/
-	@ cd .saxon && unzip SaxonHE10-6J.zip && rm -rf SaxonHE10-6J.zip
+	@ wget -c https://downloads.sourceforge.net/project/saxon/Saxon-HE/10/Java/SaxonHE10-6J.zip -P .saxon/
+	@ cd .saxon && unzip SaxonHE10-6J.zip
+
+clean:
+	@ test -d .saxon && rm -rfv SaxonHE10-6J.zip
