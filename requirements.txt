@@ -1,5 +1,5 @@
 # TOOLCHAIN dependencies
-ted-sws @ https://github.com/OP-TED/ted-rdf-conversion-pipeline/archive/refs/tags/1.2.0-rc.2.zip
+ted-sws @ https://github.com/OP-TED/ted-rdf-conversion-pipeline/archive/refs/tags/1.2.0-rc.4.zip
 networkx~=3.1
 pyvis~=0.3.2
 rdflib~=6.1.1
