@@ -6,7 +6,7 @@ from pathlib import Path
 import click
 from pydantic.utils import deep_update
 
-from ted_sws.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner, DEFAULT_MAPPINGS_PATH
+from mapping_toolchain.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner, DEFAULT_MAPPINGS_PATH
 from ted_sws.core.model.transform import ConceptualMappingDiff
 from ted_sws.event_manager.adapters.log import LOG_WARN_TEXT
 from mapping_toolchain.mapping_suite_processor.entrypoints.cli import CONCEPTUAL_MAPPINGS_FILE_TEMPLATE

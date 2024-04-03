@@ -4,7 +4,7 @@ import click
 from pymongo import MongoClient
 
 from ted_sws import config
-from ted_sws.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner
+from mapping_toolchain.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner
 from ted_sws.data_manager.services.export_notice_from_mongodb import export_notice_by_id
 
 CMD_NAME = "CMD_EXPORT_NOTICES_FROM_MONGODB"

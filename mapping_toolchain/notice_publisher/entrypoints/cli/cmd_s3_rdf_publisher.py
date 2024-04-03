@@ -5,7 +5,7 @@ from typing import List
 from urllib.parse import urljoin, urlparse
 
 import click
-from ted_sws.core.adapters.cmd_runner import CmdRunnerForMappingSuite as BaseCmdRunner, DEFAULT_MAPPINGS_PATH
+from mapping_toolchain.core.adapters.cmd_runner import CmdRunnerForMappingSuite as BaseCmdRunner, DEFAULT_MAPPINGS_PATH
 from ted_sws.core.model.manifestation import RDFManifestation
 from ted_sws.data_manager.services.mapping_suite_resource_manager import read_flat_file_resources, \
     file_resource_output_path

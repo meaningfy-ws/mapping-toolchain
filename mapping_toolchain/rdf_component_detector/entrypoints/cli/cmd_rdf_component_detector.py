@@ -1,8 +1,8 @@
 from pathlib import Path
 
 import click
-from ted_sws.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner
-from ted_sws.core.adapters.cmd_runner import DEFAULT_OUTPUT_PATH
+from mapping_toolchain.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner
+from mapping_toolchain.core.adapters.cmd_runner import DEFAULT_OUTPUT_PATH
 from mapping_toolchain.rdf_component_detector.services.detect_graph_component import \
     detect_graph_components
 

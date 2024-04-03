@@ -1,6 +1,6 @@
 import click
 from pathlib import Path
-from ted_sws.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner
+from mapping_toolchain.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner
 from ted_sws.event_manager.adapters.log import LOG_INFO_TEXT
 from mapping_toolchain.rdf_differ.services.difference_between_rdf_files import \
     generate_rdf_differ_html_report
