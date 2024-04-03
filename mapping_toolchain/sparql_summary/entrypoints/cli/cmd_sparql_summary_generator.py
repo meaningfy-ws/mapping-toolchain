@@ -3,7 +3,7 @@ import pathlib
 
 import click
 
-from ted_sws.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner
+from mapping_toolchain.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner
 
 from mapping_toolchain.sparql_summary.services.sparql_summary_generator import generate_sparql_summary
 

@@ -16,7 +16,7 @@ from typing import List
 import click
 from pymongo import MongoClient
 from ted_sws import config
-from ted_sws.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner
+from mapping_toolchain.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner
 from ted_sws.core.model.manifestation import XMLManifestation, RDFManifestation
 from ted_sws.core.model.notice import Notice, NoticeStatus
 from ted_sws.data_manager.adapters.notice_repository import NoticeRepository

@@ -3,7 +3,7 @@ from pathlib import Path
 from typing import List
 
 import click
-from ted_sws.core.adapters.cmd_runner import CmdRunnerForMappingSuite as BaseCmdRunner, DEFAULT_MAPPINGS_PATH
+from mapping_toolchain.core.adapters.cmd_runner import CmdRunnerForMappingSuite as BaseCmdRunner, DEFAULT_MAPPINGS_PATH
 from ted_sws.core.model.manifestation import XMLManifestation
 from ted_sws.core.model.notice import Notice
 from ted_sws.core.model.transform import MappingSuite

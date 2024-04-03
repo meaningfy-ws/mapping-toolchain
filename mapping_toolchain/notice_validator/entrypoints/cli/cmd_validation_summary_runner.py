@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import List, Dict
 
 import click
-from ted_sws.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner, DEFAULT_MAPPINGS_PATH
+from mapping_toolchain.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner, DEFAULT_MAPPINGS_PATH
 from ted_sws.core.model.manifestation import XMLManifestation, RDFManifestation, XPATHCoverageValidationReport, \
     SPARQLTestSuiteValidationReport, SHACLTestSuiteValidationReport, ValidationSummaryReport
 from ted_sws.core.model.notice import Notice

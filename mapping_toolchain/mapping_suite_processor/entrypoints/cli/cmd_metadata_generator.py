@@ -5,7 +5,7 @@ from pathlib import Path
 
 import click
 
-from ted_sws.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner, DEFAULT_MAPPINGS_PATH
+from mapping_toolchain.core.adapters.cmd_runner import CmdRunner as BaseCmdRunner, DEFAULT_MAPPINGS_PATH
 from ted_sws.data_manager.adapters.mapping_suite_repository import MS_METADATA_FILE_NAME
 from ted_sws.event_manager.adapters.log import LOG_INFO_TEXT
 from mapping_toolchain.mapping_suite_processor.entrypoints.cli import CONCEPTUAL_MAPPINGS_FILE_TEMPLATE, \
